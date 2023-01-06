@@ -38,7 +38,7 @@ router.post('/', async (req, res) => {
     
 });
 
-router.put('/:id', async (req, res) => {
+router.patch('/:id', async (req, res) => {
     const id = req.params.id;
     
     let product = await Product.findByPk(id);
